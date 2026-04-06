@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ozioma Love - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   
+  </head>
+  <body>
+
+  <div class = "container-fluid">
+
+    <!-- Sidebar -->
+     <aside class="sidebar">
+
+  <!-- Social icons -->
+   <div class="socials">
+        <a href="mailto:lovelyozzy@gmail.com" target="_blank" aria-label="Email">
+                <i class="bi bi-email"></i>
+            <img src="./images/icon-email.png" alt="Email"></a>  
+                
+        <!--<a href="https://github.com/Love39" target="_blank" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+                  <img src="./images/icon-github.svg" alt="Github"></a>-->
+
+                <a href="https://www.linkedin.com/in/oziomalove" target="_blank" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                  <img src="./images/icon-linkedin.svg" alt="Linkedin"></a>
+
+          <!--<a href="https://www.twitter.com/in/oziomalove" target="_blank" aria-label="Twitter">
+            <i class="bi bi-twitter-x"></i>
+        <img src="./images/icon-twitter.svg" alt="Twitter"></a> -->
+          </div>
+
+          <!-- Profile name -->
+      <div class="profile">
+      <h2>Ozioma Love Ihezukwu</h2>
+      </div>
+
+      <!-- Navigation Bar -->
+       <nav>
+        <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skill set</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+       </nav>        
+      </aside>
+
+<!-- Main Content -->
+ <main class="mainbar">
+
+        <!-- About Me -->
+    <section id="about">
+      <div class="row">
+
+        <div class="col-md-5">
+          <h1>Hi <img src="images/waving-hand.png" width="60px"/>,</h1>
+          <h1> I'm Ozioma Love! </h1>
+          <div class="wrapper">
+          <p class="reveal">I am a Data Analyst</p>
+          <p class="reveal">skilled in Excel and SQL.</p>
+           <p class="reveal"> I analyze data to uncover insights</p>
+            <p class="reveal"> and support decision-making. </p>     
+             </div>
+        </div>
+
+          <div class="col-md-7">
+             <div class="profile_img">
+        <picture>
+          <source srcset="./images/image-profile-desktop.webp" media="(min-width: 900px)">
+          <source srcset="./images/image-profile-tablet.webp" media="(min-width: 600px)">
+          <img src="./images/image-profile-mobile.webp" alt="Profile image" class="profile-image">
+        </picture>
+        </div>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>SKILL SET</h2>
+      
+      <div class="all_skills">
+
+       <div class="skill">
+          <h6>Quantitative Research</h6>
+          <p></p>
+        </div>
+
+        <div class="skill">
+          <h6>Statistical Sampling</h6>
+          <p></p>
+        </div>
+
+      	<div class="skill">
+          <h6>SQL</h6>
+          <p></p>
+        </div>  
+
+        <div class="skill">
+          <h6>Data Storytelling</h6>
+          <p></p>
+        </div>  
+
+        <div class="skill">
+          <h6>Stakeholder Communications</h6>
+          <p></p>
+        </div> 
+
+
+        <div class="skill">
+          <h6>Algorithm</h6>
+          <p></p>
+        </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section id="projects">
+      <h2>PROJECT</h2>
+      
+      <div class="projects_list">
+        	<div class="project">
+            <div class="project_title">RETAIL SALES PERFORMANCE ANALYSIS</div>
+            <br/>
+            <h4>Overview</h4>
+<p>This project analyzes retail sales data to evaluate revenue trends and 
+  identify high-performing product categories.</p>
+ <br/>
+ <h4>Tools Used</h4>
+ <ul>
+  <li>SQL (SQLite)</li>
+  <li>Microsoft Excel</li>
+ </ul>
+<br/>
+<h4>Key Tasks</h4>
+<ul>
+  <li>Cleaned and analyzed sales data</li>
+  <li>Wrote SQL queries (GROUP BY, ORDER BY)</li>
+  <li>Created pivot tables and charts</li>
+</ul>
+<br/>
+<h4>Sample SQL Query</h4>
+<p>sql</p>
+<code>SELECT category,<br>
+      SUM(amount)<br>
+      AS total_sales<br>
+      FROM sales<br>
+      GROUP BY category<br>
+      ORDER BY total_sales<br>
+      DESC;
+</code>
+<br/><br/>
+<h4>Insights</h4>
+<ul>
+  <li>Food category generated the highest revenue</li>
+  <li>Some days performed below average</li>
+  <li>Sales trend varied across categories</li>
+</ul>
+<br/>
+<h4>Visuals</h4>
+<h5>Column chart</h5>
+  <img src="images/PivotTable.png" alt="A Pivot table which displays the sales made on each day of the week" 
+  title="Pivot table displaying weekly sales in a cafe"/>
+  <br><br><br><br>
+  <h5>Pivot table summary</h5>
+  <img src="images/ColumnChart.png" alt="A column chart that shows total sales made in a week grouped by food and drinks category" 
+  title="Column chart displaying total sales by category"/>
+<br/><br/><br/>
+<h4>Business Recommendation</h4>
+<p>The business can increase revenue by focusing on high-performing categories and 
+  introducing promotions on low-performing days.
+</p>
+</div>
+      </div>
+    </section>
+    <!-- Contact -->
+     <section>
+      <h2>CONTACT</h2>
+       <div class="socials mt-auto text-center">
+        <a href="mailto:lovelyozzy@gmail.com" target="_blank" aria-label="Email">
+                <i class="bi bi-email"></i>
+            <img src="./images/icon-email.png" alt="Email"></a>  
+
+                <a href="https://www.linkedin.com/in/oziomalove" target="_blank" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                  <img src="./images/icon-linkedin.svg" alt="Linkedin"></a>
+       </div>
+        </section>
+       <footer>
+        <p class="footer-p">© <span>Copyright</span> <strong class="px-1 sitename">Portfolio - Developed by 
+          <a href="mailto:lovelyozzy@gmail.com" target="_blank" rel="noopener noreferrer">Ozioma</a></strong> <span></span></p> 
+  </footer>
+ 
+     
+ </main>
+      </div>
+    
+       <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="./script.js"></script>
+    
+  </body>
+</html>

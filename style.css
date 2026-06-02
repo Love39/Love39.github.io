@@ -1,12 +1,16 @@
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
+.portfolio-container {
+  width: 100%;
 }
 
 .sidebar {
@@ -19,10 +23,8 @@ body {
   background-color:  #7600bc;
   color: #fff;
   padding-bottom: 20%;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 } 
 
@@ -36,16 +38,13 @@ body {
 /* Social icons */
 .socials {
   text-align: center;
-  margin-top: 20%;
-  padding-bottom: 10%;
-  padding-top: 30%;
+  margin-top: 15px;
 }
 
 .socials a {
   color: #cbd5e1;
   font-size: 1.4rem;
-  margin: 0 0.5rem;
-  padding: 1rem;
+  margin: 8px 15px;
 }
 
 .socials a:hover {
@@ -88,6 +87,7 @@ body {
 
 /*right column*/
 .mainbar {
+  margin-right: 0;
   margin-left: 25%;
   width: 75%;
   padding: 2rem;
@@ -96,18 +96,51 @@ body {
   flex: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .sidebar {
-    width: 90px;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    padding: 15px;
+    order: 2;
   }
 
-  .content {
-    margin-left: 90px;
+  .mainbar {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    order: 1;
   }
 
-  .nav-link a {
-    text-align: center;
-    font-size: 0.85rem;
+  section {
+    padding: 20px;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #about h1 {
+    font-size: 38px;
+  }
+
+  #about p {
+    font-size: 18px;
+  }
+
+  .skill {
+    width: 100%;
+    margin: 15px 0;
   }
 }
 
@@ -120,7 +153,6 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 60px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -131,12 +163,15 @@ h2 {
 .profile_img {
     justify-content: center;
     display: flex;
-    order: 1;
+    order: 1; 
+    max-width: 100%;
+    height: auto;
 }
 
 .profile-image {
-  width: 550px;
-  height: fit-content;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
   padding: 10px;
   border-radius: 40%;
   margin-left: 50px;
@@ -227,16 +262,11 @@ h2 {
     font-size: larger;
 }
 
-.project_technology {
-    display: flex;
-    gap: 19px;
-    padding-bottom: 20px;
-}
-
-project img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
+.project-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
 }
 
 .project_actions {
@@ -246,29 +276,21 @@ project img {
 
 /* Contact */
 
-#contact {
-  padding: 10px;
-}
-
-.social-links {
-    margin: 40px;
-}
-
 .social-icon {
     background-color: wheat;
     color: #333;
-    padding: 20px 25px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     align-items: center;
-    margin-right: 180px;
-    font-weight: bold;    
+    font-weight: bold; 
 }
 
 /* footer */
 .footer-p {
   text-align-last: center;
   font-size: 18px;
+  margin-top: 20px;
 }
+

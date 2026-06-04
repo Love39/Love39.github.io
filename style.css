@@ -1,4 +1,5 @@
 
+
 body {
   overflow-x: hidden;
 }
@@ -98,25 +99,25 @@ body {
 
 @media (max-width: 768px) {
 
-  .container {
+  .portfolio-container {
     display: flex;
     flex-direction: column;
   }
 
   .sidebar {
+    order: 2;
     position: relative;
     width: 100%;
     min-width: 100%;
     height: auto;
     padding: 15px;
-    order: 2;
   }
 
   .mainbar {
+     order: 1;
     width: 100%;
     margin-left: 0;
     padding: 20px;
-    order: 1;
   }
 
   section {
@@ -293,4 +294,3 @@ h2 {
   font-size: 18px;
   margin-top: 20px;
 }
-

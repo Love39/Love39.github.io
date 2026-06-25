@@ -177,6 +177,71 @@
 </p>
 </div>
       </div>
+
+<div class="projects_list">
+        	<div class="project">
+            <div class="project_title">Employee Attrition Analysis Using Excel</div>
+            <br/>
+            <h4>Overview</h4>
+<p>This project analyzes retail sales data to evaluate revenue trends and 
+  identify high-performing product categories.</p>
+ <br/>
+  <h4>Key findings </h4>
+      <ul>
+<li>The overall employee attrition rate was 16.12%, indicating that approximately one in six employees left the organization.</li>
+<li>The Sales department recorded the highest number of attrition rate of 20.63% during the period analyzed.</li>
+<li>Among the job roles, Laboratory Technicians experienced the highest turnover, accounting for 62 employee exits.</li>
+<li>Employees who worked overtime showed significantly higher attrition, with 53.59% of departing employees having worked overtime, suggesting workload may contribute to turnover.</li>
+<li>Attrition varied across job satisfaction levels, indicating that employee satisfaction may influence retention outcomes.</li>
+</ul>
+            
+ <h4>Tools Used</h4>
+ <ul>
+  <li>SQL (SQLite)</li>
+  <li>Microsoft Excel</li>
+ </ul>
+<br/>
+<h4>Key Tasks</h4>
+<ul>
+  <li>Cleaned and analyzed sales data</li>
+  <li>Wrote SQL queries (GROUP BY, ORDER BY)</li>
+  <li>Created pivot tables and charts</li>
+</ul>
+<br/>
+<h4>Sample SQL Query</h4>
+<p>sql</p>
+<code>SELECT category,<br>
+      SUM(amount)<br>
+      AS total_sales<br>
+      FROM sales<br>
+      GROUP BY category<br>
+      ORDER BY total_sales<br>
+      DESC;
+</code>
+<br/><br/>
+<h4>Insights</h4>
+<ul>
+  <li>Food category generated the highest revenue</li>
+  <li>Some days performed below average</li>
+  <li>Sales trend varied across categories</li>
+</ul>
+<br/>
+<h4>Visuals</h4>
+<h5>Weekday Sales</h5>
+  <img src="images/PivotTable.png" alt="A column chart which displays the sales made on each day of the week" 
+  title="Pivot table displaying weekly sales in a cafe" class="project-image"/>
+  <br><br><br><br>
+  <h5>Sales category summary</h5>
+  <img src="images/ColumnChart.png" alt="A column chart that shows total sales made in a week grouped by food and drinks category" 
+  title="Column chart displaying total sales by category" class="project-image"/>
+<br/><br/><br/>
+<h4>Business Recommendation</h4>
+<p>The business can increase revenue by focusing on high-performing categories and 
+  introducing promotions on low-performing days.
+</p>
+</div>
+      </div>
+      
     </section>
     <!-- Contact -->
      <footer>

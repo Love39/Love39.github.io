@@ -48,3 +48,27 @@ function showPopup(bool) {
     popup.focus();
   }
 }
+
+
+ var viz;
+
+        function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+                url = "https://public.tableau.com/app/profile/ozioma.ihezukwu/viz/C02emissionspercapitalpercountryfrom2000-2011/Sheet1",
+                options = {
+                    hideTabs: true
+                };
+
+            viz = new tableau.Viz(containerDiv, url, options);
+           // Create a viz object and embed it in the container div.
+        }
+
+        // Opens the Download to PDF dialog box
+        function exportToPDF() {
+            viz.showExportPDFDialog();
+        }
+
+// Opens the Download dialog box
+        function showDownloadDialog() {
+                viz.showDownloadDialog();
+        }
